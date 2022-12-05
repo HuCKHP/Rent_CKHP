@@ -19,7 +19,7 @@ import com.groupone.service.IF_memberservice;
 public class BoardController {
 	@Inject
 	IF_memberservice msvs;
-	/**
+	/**  
 	 * Simply selects the home view to render by returning its name.
 	 */   
 	@RequestMapping(value = "/boardview", method = RequestMethod.GET)	//게시판화면보기
