@@ -21,4 +21,4 @@ public class ReserveController {
 	public String cars(Locale locale, Model model) throws Exception {
 		return "reserve/cars";	//회원가입화면
 	}
-}
+} 
