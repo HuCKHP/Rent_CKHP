@@ -29,7 +29,7 @@ public class BoardController {
 	}
 	@RequestMapping(value = "/boardone", method = RequestMethod.GET)	//게시판화면보기
 	public String boardone(Locale locale, Model model,@RequestParam("bno") String bno) throws Exception {
-		
+		  
 		return "board/boardone";
 	}
 }
