@@ -114,7 +114,7 @@
               <a href="single.html">
                 <img src="" alt="Image"
                  class="img-fluid">
-              </a>
+              </a> 
               <div class="post-entry-1-contents">
                 console.log(${bvo.title });
                 <h2><a href="single.html">${bvo.title }</a></h2>
