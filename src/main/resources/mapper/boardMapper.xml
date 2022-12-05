@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.groupone.dao.IF_boardDAO">
+
+	<!-- 게시판등록 -->
+	<insert id="boardinsert" parameterType="com.groupone.vo.BoardVO">
+		insert into boardcar values(bno_seq.nextval,#{rno},#{id},#{title},#{content},default,default)
+	</insert>
+	
+	<!-- 페이징을 위한 총 글 갯수 가져오기-->
+	<select id="countBoard" resultType="int">
+		select count(*) from boardcar 
+	</select>
+	
+		<!-- 게시글 전체 불러오기 -->
+	<select id="selectAll" resultType="com.groupone.vo.BoardVO">
+		select * from boardcar 
+	</select>
+</mapper>

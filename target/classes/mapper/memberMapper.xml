@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.groupone.dao.IF_memberDAO">
+
+	<!-- 회원가입 -->
+	<insert id="memberinsert" parameterType="com.groupone.vo.MemberVO">
+		insert into carmember values(#{id},#{pass},#{name},#{tel},#{age},#{addr},#{gender},#{email},#{coupon})
+	</insert>
+	
+	<!-- 아이디하나 select -->
+	<select id="memberone" resultType="com.groupone.vo.MemberVO">
+		select * from carmember where id=#{id}
+	</select>
+	
+
+	
+	
+</mapper>
