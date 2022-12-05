@@ -21,7 +21,7 @@ public class BoardController {
 	IF_memberservice msvs;
 	/**
 	 * Simply selects the home view to render by returning its name.
-	 */
+	 */   
 	@RequestMapping(value = "/boardview", method = RequestMethod.GET)	//게시판화면보기
 	public String boardview(Locale locale, Model model) throws Exception {
 		
